@@ -3,6 +3,7 @@ import { View } from "react-native";
 import Header from "./Header";
 import Auth from "./Auth"
 import SummerSpecial from './SummerSpecial'
+import Popular from './Popular'
 
 
 class Homepage extends Component {
@@ -13,6 +14,7 @@ class Homepage extends Component {
                 <Header/>
                 <Auth/>
                 <SummerSpecial/>
+                <Popular/>
             </View>
         );
     }
