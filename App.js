@@ -1,24 +1,42 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image} from "react-native";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import { View, SafeAreaView, ImageBackground, Image, Text } from "react-native";
 
 export default function App() {
-  console.log("App has been executed")
-
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello React</Text>
-      <Image source={require('./assets/icon.png')}/>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <View
+      style={{
+        flex: 1,
+        flexDirection: "column",
+      }}
+    >
+      <ImageBackground
+        source={require("./assets/background.jpg")}
+        style={{
+          flex: 1,
+          flexDirection: "row",
+          resizeMode: "cover",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Image
+          source={require("./assets/logo-red.png")}
+          style={{
+            width: 100,
+            height: 100,
+            position: "absolute",
+            top: 100,
+          }}
+        />
+        <Text style={{ position: "absolute", top: 200 }}>
+          Sell What You Need
+        </Text>
+      </ImageBackground>
+      <View style={{ flex: 0.1, backgroundColor: "#fc5c65" }} />
+      <View style={{ flex: 0.1, backgroundColor: "#4ECDC4" }} />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1, // view is flexible. Will grow to fill the entire space 
-    backgroundColor: "beige", // can be code color or by name 
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
