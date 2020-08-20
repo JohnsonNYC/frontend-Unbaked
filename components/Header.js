@@ -5,7 +5,7 @@ class Header extends Component {
     state = {  }
     render() { 
         return ( 
-            <View style={{flex:0.1, justifyContent:'center', alignItems:'center', backgroundColor:'royalblue'}}>
+            <View style={{flex:0.2, justifyContent:'center', alignItems:'center', backgroundColor:'royalblue'}}>
               <Text style={style.header}>U n b a k e d</Text>
             </View>
         );

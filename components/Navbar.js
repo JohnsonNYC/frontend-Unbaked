@@ -12,7 +12,7 @@ class Navbar extends Component {
           flexDirection: "row", // primary axis is horizontal
           backgroundColor: "midnightblue",
           justifyContent: "space-evenly", // align along main axis
-          alignItems: "flex-end", // align alond the secondary axis, in this case the vertical
+          alignItems: "center", // align alond the secondary axis, in this case the vertical
         }}
       >
           <Button title="Goods"></Button>
