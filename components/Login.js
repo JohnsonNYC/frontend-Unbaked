@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Alert } from 'react-native';
 import { Container, Content, Form, Item, Input, Label,Button, Text} from 'native-base';
 
 import Header from './Header'
+
+const handleSubmit = (e) =>{
+    e.preventDefault()
+    Alert.alert("Sign in Working")
+}
 
 const Login = () => {
     const [text,setText] = useState('')
@@ -12,6 +17,7 @@ const Login = () => {
     // console.log('--------------')
     // console.log('email', text)
     // console.log('password',password)
+
     return ( 
         <Container>
             <Header title={title}/>
@@ -23,13 +29,13 @@ const Login = () => {
                         <Text> Enable Face ID Slider</Text>
                     </View> */}
                     <Item>
-                        <Input placeholder='Email'/>
+                        <Input placeholder='Email'onChangeText={(text)=> setText(text)}/>
                     </Item>
                     <Item last>
-                        <Input placeholder='Password'/>
+                        <Input placeholder='Password' onChangeText={(password)=> setPassword(password)} secureTextEntry={true}/>
                     </Item>
+                    <Button full bordered light primary onPress={handleSubmit}><Text>Sign In</Text></Button>
                 </Form>
-                <Button full bordered light primary><Text>Sign In</Text></Button>
             </Content>
         </Container>
     );
