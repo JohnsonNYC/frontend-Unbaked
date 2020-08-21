@@ -4,7 +4,6 @@ import { View,Button,Alert } from 'react-native';
 class Auth extends Component {
     state = {  }
     render() { 
-        console.log(this.props.navigation)
         return (     
             <View style={{flex:.1,flexDirection:"row" ,justifyContent:'center',alignItems:'center', backgroundColor:'midnightblue'}}>
                 <Button title="Login" onPress={()=> this.props.navigation.navigate('Login')}/>
