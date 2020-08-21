@@ -13,7 +13,7 @@ class Homepage extends Component {
         return ( 
             <View style={{flex:1}}>
                 <Header/>
-                <Auth/>
+                <Auth navigation={this.props.navigation}/>
                 <SummerSpecial/>
                 <Popular/>
                 <About/>
