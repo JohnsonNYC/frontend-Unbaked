@@ -3,9 +3,9 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { View,} from "react-native";
 import Homepage from "./components/Homepage";
 import Login from "./components/Login"
+import Signup from "./components/Signup"
 
 const Stack = createStackNavigator()
 
@@ -19,6 +19,7 @@ export default function App() {
         {/* to be passed down to Auth. Where the Button are that render login and signup */}
         <Stack.Screen name="Home" component={Homepage} options={{headerShown: false}}/> 
         <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
+        <Stack.Screen name="Signup" component={Signup} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

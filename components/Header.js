@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Header, Body, Title } from 'native-base';
 import {View, Text, StyleSheet} from 'react-native'
 
 class Headers extends Component {
