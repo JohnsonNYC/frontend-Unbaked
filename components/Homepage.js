@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text} from "react-native";
+import { View} from "react-native";
 import Headers from "./Header";
 import Auth from "./Auth"
 import SummerSpecial from './SummerSpecial'
