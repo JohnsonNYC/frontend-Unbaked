@@ -35,7 +35,7 @@ const Login = () => {
         <View style={{flex:1, flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <Text>Hello</Text>
             <TextInput placeholder="email" onChangeText={(text)=> setText(text)}/>
-            <TextInput placeholder="password" onChangeText={(password)=> setPassword(password)}/>
+            <TextInput placeholder="password" onChangeText={(password)=> setPassword(password)} secureTextEntry={true}/>
         </View>
     );
 }
