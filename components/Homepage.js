@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View} from "react-native";
-import Headers from "./Header";
+import { Container, Content} from "native-base";
+import Header from "./Header";
 import Auth from "./Auth"
 import SummerSpecial from './SummerSpecial'
 import Popular from './Popular'
@@ -11,25 +11,16 @@ class Homepage extends Component {
     
     render() { 
         return ( 
-            <View style={{flex:1}}>
-                {/* Heder flex:0.2 */}
-                <Headers/> 
-
-                {/* Auth flex:0.2 */}
-                <Auth navigation={this.props.navigation}/>
-
-                {/* SummerSpecial flex:0.2 */}
-                <SummerSpecial/>
-
-                {/* Popular flex:0.2 */}
-                <Popular/>
-
-                {/* About flex:0.2 */}
-                <About/>
-
-                {/* Navbar flex:0.2 */}
-                <Navbar/>
-            </View>
+            <Container style={{justifyContent:'center'}}>
+                    <Header/> 
+                <Content>
+                    <Auth navigation={this.props.navigation}/>
+                    <SummerSpecial/>
+                    <Popular/>
+                    <About/>
+                </Content>
+                    <Navbar/>                  
+            </Container>
         );
     }
 }

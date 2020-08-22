@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet} from 'react-native'
+import { StyleSheet} from 'react-native'
+import { View, Text, Header,Title} from 'native-base';
 
 class Headers extends Component {
     
     render() { 
       // console.log('header',this.props) // Use Props to Dynamically Render header title. Pass prop in file that needs Header as "title"
         return ( 
-            <View style={{flex:0.2, justifyContent:'center', alignItems:'center', backgroundColor:'royalblue'}}>
-              <Text style={style.header}>{this.props.title?this.props.title: "UNBAKED"}</Text>
+            <View style={styles.view}>
+                <Text style={styles.header}>{this.props.title?this.props.title: "UNBAKED"}</Text>
             </View>
         );
     }
 }
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   header:{
-    top:10,
     fontFamily:"Verdana",
     fontSize:40
+  },
+  view:{
+    height:100,
+    backgroundColor:'lavender',
+    justifyContent:'center',
+    alignItems:'center',
   }
 })
 export default Headers;
