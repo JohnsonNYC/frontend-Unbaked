@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {StyleSheet} from 'react-native'
-import { Container,Text, Button,View} from 'native-base';
+import {Footer, FooterTab,Icon, Button} from 'native-base';
 
 class Navbar extends Component {
   //Goods
@@ -8,29 +8,45 @@ class Navbar extends Component {
   //MyBasket
   render() {
     return (
-      <View style={styles.view}>
-          <Button>
-            <Text>Goods</Text>
-          </Button>
-          <Button>
-            <Text>MyUBG</Text>
-          </Button>
-          <Button>
-            <Text>MyBasket</Text>
-          </Button>
+      // <View style={styles.view}>
+      //     <Button transparent large>
+      //       <Text>Goods</Text>
+      //     </Button>
+      //     <Button transparent large>
+      //       <Text>MyUBG</Text>
+      //     </Button>
+      //     <Button transparent large>
+      //       <Text>MyBasket</Text>
+      //     </Button>
           
-      </View>
+        <Footer style={styles.footer}>
+          <FooterTab style={styles.tab}>
+            <Button>
+              <Icon name="apps" />
+            </Button>
+            <Button>
+              <Icon name="camera" />
+            </Button>
+            <Button >
+              <Icon name="navigate" />
+            </Button>
+          </FooterTab>
+        </Footer>
     );
   }
 }
 
 const styles = StyleSheet.create({
-    view:{
-      height:70,
-      flexDirection: "row", // primary axis is horizontal
-      backgroundColor: "midnightblue",
-      justifyContent: "center", // align along main axis
-      alignItems: "flex-end", // align alond the secondary axis, in this case the vertical
+    footer:{
+      flexDirection:'row',
+      justifyContent:'center',
+      backgroundColor:'black'
+    },
+    tab:{
+      width:'100%',
+      height:'100%',
+      top:10,
+      backgroundColor:'black',
     }
 })
 export default Navbar;

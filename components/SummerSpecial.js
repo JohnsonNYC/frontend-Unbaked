@@ -7,24 +7,27 @@ class SummerSpecial extends Component {
     state = {  }
     render() { 
         return ( 
-            <Container style={styles.container}>
-                <View style={styles.view}>
+            <View style={styles.view}>
+                {/* <View style={styles.view}> */}
                     <Text >Summer Specials</Text>
-                </View>
-                <Container style={styles.container}>
-                    <Text >At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.</Text>
-                </Container>
-            </Container>
+                {/* </View> */}
+                {/* <Container style={styles.container}> */}
+                    <Text >In style height is set to 150 dpi</Text>
+                {/* </Container> */}
+            </View>
         );
     }
 }
 const styles= StyleSheet.create({
     container:{
-        backgroundColor:'gold',
+        backgroundColor:'red',
         borderWidth:5
     },
     view:{
-        backgroundColor:'orange'
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:'orange',
+        height:700
     }
 })
 
