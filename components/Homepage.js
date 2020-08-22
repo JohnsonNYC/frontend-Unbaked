@@ -8,12 +8,12 @@ import About from './About'
 import Navbar from './Navbar'
 
 class Homepage extends Component {
-    
+    // Use <View> to controll the dimensions of each Component 
     render() { 
         return ( 
-            <Container style={{justifyContent:'center'}}>
-                    <Header/> 
+            <Container style={{justifyContent:'center', backgroundColor:'lavender'}}>
                 <Content>
+                    <Header/> 
                     <Auth navigation={this.props.navigation}/>
                     <SummerSpecial/>
                     <Popular/>

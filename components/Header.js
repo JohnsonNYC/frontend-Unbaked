@@ -15,6 +15,7 @@ class Headers extends Component {
 }
 const styles = StyleSheet.create({
   header:{
+    top:10,
     fontFamily:"Verdana",
     fontSize:40
   },

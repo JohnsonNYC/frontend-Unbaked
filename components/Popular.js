@@ -6,16 +6,22 @@ class Popular extends Component {
     state = {  }
     render() { 
         return ( 
-            <Container>
-                <Container>
+            <View style={styles.view}>
                     <Text>Popular Dough Portion</Text>
-                </Container>
-                <Container>
-                    <Text>Array of Dough here</Text>
-                </Container>
-            </Container>
+                    <Text>Array of Dough here. Adjust height</Text>
+            </View>
         );
     }
 }
+
+const styles=StyleSheet.create({
+    view:{
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor: 'olive',
+        width:'100%',
+        height: 700
+    }
+})
 
 export default Popular;
