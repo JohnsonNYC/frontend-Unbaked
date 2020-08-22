@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { StyleSheet, Alert } from 'react-native';
 import { Container, Content, Form, Item, Input, Label,Button, Text} from 'native-base';
 
-import Header from './Header'
+import Headers from './Header'
 
 const handleSubmit = (e) =>{
     e.preventDefault()
@@ -20,7 +20,7 @@ const Login = () => {
 
     return ( 
         <Container>
-            <Header title={title}/>
+            <Headers title={title}/>
             <Content>
                 <Form style={styles.form}>
                     {/* <View style={{flex:.8,flexDirection:'column', backgroundColor:'tan', justifyContent:'center'}}>

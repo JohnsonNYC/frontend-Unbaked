@@ -1,26 +1,36 @@
 import React, { Component } from "react";
-import { StatusBar } from "expo-status-bar";
-import { Text, View, Button } from "react-native";
+import {StyleSheet} from 'react-native'
+import { Container,Text, Button,View} from 'native-base';
 
 class Navbar extends Component {
-  state = {};
+  //Goods
+  //MyUBG
+  //MyBasket
   render() {
     return (
-      <View
-        style={{
-          flex: 0.1,
-          flexDirection: "row", // primary axis is horizontal
-          backgroundColor: "midnightblue",
-          justifyContent: "space-evenly", // align along main axis
-          alignItems: "center", // align alond the secondary axis, in this case the vertical
-        }}
-      >
-          <Button title="Goods"></Button>
-          <Button title="My UBG"></Button>
-          <Button title="Basket"></Button>
+      <View style={styles.view}>
+          <Button>
+            <Text>Goods</Text>
+          </Button>
+          <Button>
+            <Text>MyUBG</Text>
+          </Button>
+          <Button>
+            <Text>MyBasket</Text>
+          </Button>
+          
       </View>
     );
   }
 }
 
+const styles = StyleSheet.create({
+    view:{
+      height:70,
+      flexDirection: "row", // primary axis is horizontal
+      backgroundColor: "midnightblue",
+      justifyContent: "center", // align along main axis
+      alignItems: "flex-end", // align alond the secondary axis, in this case the vertical
+    }
+})
 export default Navbar;
