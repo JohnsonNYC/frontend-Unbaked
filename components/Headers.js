@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import { StyleSheet} from 'react-native'
-import { View, Text,Icon, Button} from 'native-base';
+import { View, Text, Button} from 'native-base';
 
-import { useNavigation } from '@react-navigation/native';
 
 class Headers extends Component {
-  backButton = ()=>{
-    console.log(this.props)
+
+  getCancel = ()=>{
+    return(
+      <Button onPress={()=>this.props.navigation.goBack()} transparent style={{top:50}}><Text>Cancel</Text></Button>
+    )
   }
   render() { 
  // Use Props to Dynamically Render header title. Pass prop in file that needs Header as "title"
-const [navigation] = useNavigation();
-console.log(navigation)
+ 
         return ( 
             <View style={styles.view}>
+              {this.props.title? this.getCancel():null}
                 <Text style={styles.header}>{this.props.title?this.props.title: "UNBAKED"}</Text>
             </View>
         );
