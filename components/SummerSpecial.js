@@ -12,7 +12,9 @@ class SummerSpecial extends Component {
                     <Text >Summer Specials</Text>
                 {/* </View> */}
                 {/* <Container style={styles.container}> */}
-                    <Text >In style height is set to 150 dpi</Text>
+                    <Text >In style height is set to 150 dpi.</Text>
+                    <Text> Filter through the Doughs with highest ratings?</Text>
+                    <Text> </Text>
                 {/* </Container> */}
             </View>
         );

@@ -8,6 +8,8 @@ class About extends Component {
         return ( 
             <View style={styles.view}>
                 <Text>About Page</Text>
+                <Text>Condtional Render</Text>
+                <Text>onPress render a new route for the about page</Text>
             </View>
         );
     }
