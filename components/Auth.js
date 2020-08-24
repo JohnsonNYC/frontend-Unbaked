@@ -7,8 +7,19 @@ class Auth extends Component {
     render() { 
         return (     
                 <View style={styles.container}>
-                        <Button style={styles.button} large bordered onPress={()=> this.props.navigation.navigate('Login')}><Text>Login</Text></Button>
-                        <Button style={styles.button} large bordered onPress={()=> this.props.navigation.navigate('Signup')}><Text>Join</Text></Button>
+                        <Button 
+                        style={styles.button} 
+                        large 
+                        bordered 
+                        onPress={()=> this.props.navigation.navigate('Login')}>
+                            <Text>Login</Text>
+                        </Button>
+                        <Button 
+                        style={styles.button} 
+                        large bordered 
+                        onPress={()=> this.props.navigation.navigate('Signup')}>
+                            <Text>Join</Text>
+                        </Button>
                 </View>
         );
     }
@@ -22,7 +33,7 @@ const styles = StyleSheet.create({
         height:70,
         flexDirection:'row',
         justifyContent:'space-evenly',
-        backgroundColor:'lavender'
+        backgroundColor:'black'
     }
 })
 
