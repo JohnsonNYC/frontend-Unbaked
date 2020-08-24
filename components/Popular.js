@@ -9,6 +9,7 @@ class Popular extends Component {
             <View style={styles.view}>
                     <Text>Popular Dough Portion</Text>
                     <Text>Array of Dough here. Adjust height</Text>
+                    <Text>Filter through DB for dough's with the highest rating?</Text>
             </View>
         );
     }

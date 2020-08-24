@@ -9,6 +9,16 @@ import Navbar from './Navbar'
 
 class Homepage extends Component {
     // Use <View> to controll the dimensions of each Component 
+    
+    // MVP 
+        // User Stories 
+        // - Sign up and Login 
+        // - Find what they're looking for
+        // - Order said thing 
+
+     // - functional sign up and login 
+     // - functional search 
+     // - functional checkout process 
 
     render() { 
         return ( 
