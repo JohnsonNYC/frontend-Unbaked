@@ -4,18 +4,17 @@ import { Container, Content, Form, Item, Input, Label,Button, Text} from 'native
 import Header from './Headers'
 import { Alert } from 'react-native';
 
-const Signup = ()=> {
+const Signup = (props)=> {
     const [title] = useState('Signup')
     const [firstName,setFirstName] = useState('Signup')
     const [lastName, setLastName] = useState('Signup')
     const [email, setEmail] = useState('Signup')
     const [password,setPassword] = useState('Signup')
     const [confirmation, setConfirmation] = useState('Signup')
-
-    console.log(firstName,lastName)
+    
         return ( 
             <Container>
-                <Header title={title}/>
+                <Header title={title} navigation={props.navigation}/>
                 <Content>
                     <Form>
                         <Item>

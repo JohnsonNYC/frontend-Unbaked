@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 import { Container, Content,Text, View, Button} from 'native-base';
 
 class Auth extends Component {
-    //contentContainerStyle - lets user style the content component 
     render() { 
         return (     
                 <View style={styles.container}>
