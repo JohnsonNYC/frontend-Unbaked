@@ -8,27 +8,16 @@ class Navbar extends Component {
   //MyBasket
   render() {
     return (
-      // <View style={styles.view}>
-      //     <Button transparent large>
-      //       <Text>Goods</Text>
-      //     </Button>
-      //     <Button transparent large>
-      //       <Text>MyUBG</Text>
-      //     </Button>
-      //     <Button transparent large>
-      //       <Text>MyBasket</Text>
-      //     </Button>
-          
         <Footer style={styles.footer}>
           <FooterTab style={styles.tab}>
             <Button>
-              <Icon name="apps" />
+              <Icon name="home" />
             </Button>
             <Button>
-              <Icon name="camera" />
+              <Icon name="person" />
             </Button>
             <Button >
-              <Icon name="navigate" />
+              <Icon name="cart" />
             </Button>
           </FooterTab>
         </Footer>
@@ -45,8 +34,8 @@ const styles = StyleSheet.create({
     tab:{
       width:'100%',
       height:'100%',
-      top:10,
       backgroundColor:'black',
+      bottom:1
     }
 })
 export default Navbar;

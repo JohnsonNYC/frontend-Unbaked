@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Content, Form, Item, Input, Label,Button, Text} from 'native-base';
 
-import Header from './Header'
+import Header from './Headers'
 import { Alert } from 'react-native';
 
 const Signup = ()=> {
