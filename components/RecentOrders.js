@@ -7,7 +7,8 @@ class RecentOrders extends Component {
     render() { 
         return ( 
             <View style={styles.view}>
-                <Text style={styles.text}> Hello </Text>
+                <Text style={styles.text}> Recent Orders </Text>
+                <Text style={styles.text}> Don't forget to add Favorites </Text>
             </View>
         );
     }
