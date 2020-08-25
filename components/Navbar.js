@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {StyleSheet} from 'react-native'
-import {Footer, FooterTab,Icon, Button} from 'native-base';
+import {Footer, FooterTab,Icon, Button, Text } from 'native-base';
 
 class Navbar extends Component {
   //Goods
@@ -10,14 +10,17 @@ class Navbar extends Component {
     return (
         <Footer style={styles.footer}>
           <FooterTab style={styles.tab}>
-            <Button>
+            <Button vertical>
               <Icon name="home" />
+              <Text>Home</Text>
             </Button>
-            <Button>
+            <Button vertical >
               <Icon name="person" />
+              <Text>My UBG</Text>
             </Button>
-            <Button >
+            <Button vertical>
               <Icon name="cart" />
+              <Text>Basket</Text>
             </Button>
           </FooterTab>
         </Footer>
