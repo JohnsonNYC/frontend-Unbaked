@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Content, Form, Item, Input, Label,Button, Text, View, Icon} from 'native-base';
 
-import SummerSpecial from './SummerSpecial'
 import Popular from './Popular'
 import About from './About'
 import Navbar from './Navbar'
 import Headers from './Headers'
+import RecentOrders from './RecentOrders'
 
 class Welcome extends Component {
     render() { 
@@ -15,10 +15,13 @@ class Welcome extends Component {
                     <Headers navigation={this.props.navigation}/>
                     {/* This div on click should take you to the profile of the user */}
                     <View style={{height:70, backgroundColor:'white', justifyContent:'center', alignItems:'center'}}>
-                        <Icon style={{alignSelf:'flex-start'}} type='SimpleLineIcons' name='user'><Text> Good Afternoon, 'User Name here' </Text> </Icon>
-                        <Icon style= {{alignSelf:'flex-start'}} name="star"> <Text>Three Stars</Text> </Icon>
-                        
+                        <Icon style={{width:'100%', backgroundColor:'white'}} type='SimpleLineIcons' name='user'>
+                            <Text> Good Afternoon, 'User Name Here' </Text>
+                            <Text>Settings Gear</Text>
+                        </Icon>
+                        <Icon style= {{alignSelf:'flex-start'}} name="star"> <Text> 'Number of Stars' Stars</Text> </Icon>
                     </View>
+                    <RecentOrders/>
                     <Popular/>
                     <About/>
                 </Content>
