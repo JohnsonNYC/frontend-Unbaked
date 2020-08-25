@@ -4,10 +4,6 @@ import { Container, Content, Form, Item, Input,Button, Text} from 'native-base';
 
 import Headers from './Headers'
 
-const handleSubmit = (e) =>{
-    e.preventDefault()
-    Alert.alert("Sign in Working")
-}
 
 const Login = (props) => { // passed route and navigation from Auth.js onPress Button function
     
@@ -15,7 +11,7 @@ const Login = (props) => { // passed route and navigation from Auth.js onPress B
     const [password,setPassword] = useState('')
     const [title, setTitle] = useState('LOGIN')
 
-
+    console.log(props.navigation)
     return ( 
         <Container>
             <Headers title={title} navigation={props.navigation}/> 
@@ -27,7 +23,7 @@ const Login = (props) => { // passed route and navigation from Auth.js onPress B
                     <Item last>
                         <Input placeholder='Password' onChangeText={(password)=> setPassword(password)} secureTextEntry={true}/>
                     </Item>
-                    <Button full bordered light primary onPress={handleSubmit}><Text>LOGIN </Text></Button>
+                    <Button full bordered light primary onPress={()=> props.navigation.navigate('Welcome')}><Text>LOGIN </Text></Button>
                 </Form>
             </Content>
         </Container>
